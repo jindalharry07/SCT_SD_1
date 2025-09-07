@@ -1,0 +1,1 @@
+🌡️ TempConvert – Java Temperature Converter (Console + GUI). Internship Task 1 for SkillCraft Technology Software Development Track. Converts between Celsius, Fahrenheit, Kelvin with user-driven design.
