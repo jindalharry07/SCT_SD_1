@@ -2,10 +2,12 @@ import java.util.Scanner;
 
 public class TemperatureConverter {
   public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);
-    boolean running = true;
+    Scanner sc = new Scanner(System.in); // Create a Scanner object for user input
+    boolean running = true; // Control variable to keep the program running until user exits
 
+    // Main loop: keeps showing the menu until the user chooses to exit
     while (running) {
+      // Display the menu
       System.out.println("\n--- Temperature Converter ---");
       System.out.println("1. Celsius to Fahrenheit");
       System.out.println("2. Celsius to Kelvin");
@@ -16,54 +18,71 @@ public class TemperatureConverter {
       System.out.println("7. Exit");
       System.out.print("Choose an option: ");
 
-      int choice = sc.nextInt();
-      double temp, result;
+      int choice = sc.nextInt(); // Get the user's menu choice
+      double temp, result; // Variables to store input temperature and converted result
 
+      // Perform action based on user's choice
       switch (choice) {
         case 1:
+          // Celsius to Fahrenheit conversion
           System.out.print("Enter Celsius: ");
           temp = sc.nextDouble();
           result = (temp * 9 / 5) + 32;
           System.out.println("Fahrenheit: " + result);
           break;
+
         case 2:
+          // Celsius to Kelvin conversion
           System.out.print("Enter Celsius: ");
           temp = sc.nextDouble();
           result = temp + 273.15;
           System.out.println("Kelvin: " + result);
           break;
+
         case 3:
+          // Fahrenheit to Celsius conversion
           System.out.print("Enter Fahrenheit: ");
           temp = sc.nextDouble();
           result = (temp - 32) * 5 / 9;
           System.out.println("Celsius: " + result);
           break;
+
         case 4:
+          // Fahrenheit to Kelvin conversion
           System.out.print("Enter Fahrenheit: ");
           temp = sc.nextDouble();
           result = (temp - 32) * 5 / 9 + 273.15;
           System.out.println("Kelvin: " + result);
           break;
+
         case 5:
+          // Kelvin to Celsius conversion
           System.out.print("Enter Kelvin: ");
           temp = sc.nextDouble();
           result = temp - 273.15;
           System.out.println("Celsius: " + result);
           break;
+
         case 6:
+          // Kelvin to Fahrenheit conversion
           System.out.print("Enter Kelvin: ");
           temp = sc.nextDouble();
           result = (temp - 273.15) * 9 / 5 + 32;
           System.out.println("Fahrenheit: " + result);
           break;
+
         case 7:
+          // Exit the program
           running = false;
           System.out.println("Exiting... Goodbye!");
           break;
+
         default:
+          // Handle invalid menu options
           System.out.println("Invalid choice!");
       }
     }
-    sc.close();
+
+    sc.close(); // Close the Scanner to prevent resource leaks
   }
 }
