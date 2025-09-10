@@ -52,11 +52,27 @@ Dropdowns to select "From" and "To" scales
 
 "Convert" button to display instant results
 
-📂 Repository Naming Convention
+## 📸 Screenshots
 
-Per internship instructions, the GitHub repository is named:
+### Console Program
+![Console Output](https://github.com/jindalharry07/SCT_SD_1/blob/db02165c945c0eae1033da751439d0d0c62dfcf0/Result/Console%20Result.png)
 
-*SCT_SD_1*
+### GUI Program
+![GUI Window](https://github.com/jindalharry07/SCT_SD_1/blob/db02165c945c0eae1033da751439d0d0c62dfcf0/Result/GUI%20Result.png)
+
+📂 Project Files
+```bash
+SCT_SD_1/
+│-- TemperatureConvertConsole.java   # Console version
+│-- TemperatureConvertGUI.java       # GUI version
+│-- readme.md                        # Project documentation
+```
+🌱 Skills Practiced
+
+-Java programming fundamentals
+-Exception handling & user input validation
+-GUI design with Swing
+-Basic Git & GitHub usage
 
 👩‍💻 Author
 
